@@ -202,10 +202,10 @@
 
     .workInner{
       height:100%;
-      padding:22px 28px 20px;
+      padding:18px 28px 16px;
       display:grid;
-      grid-template-rows:12px 56px 48px 22px 40px;
-      row-gap:9px;
+      grid-template-rows:12px 52px 40px 20px 20px 40px;
+      row-gap:6px;
       justify-items:center;
       align-items:center;
       text-align:center;
@@ -248,8 +248,17 @@
       font-weight:500;
     }
 
-    .descSpacer{
+    .descSpacer,
+    .creditSpacer{
       visibility:hidden;
+    }
+
+    .creditLine{
+      color:#244a68;
+      font-weight:750;
+      font-size:clamp(14px,.98vw,15.5px);
+      line-height:1.18;
+      margin:0;
     }
 
     .created{
@@ -282,7 +291,6 @@
       transform:translateY(-2px);
       filter:saturate(1.08) brightness(1.02);
     }
-
 
     .footerPanel{
       position:relative;
@@ -406,10 +414,11 @@
       .intro p + p{margin-top:6px}
       .portfolio{height:224px;gap:18px}
       .work{border-radius:32px}
-      .workInner{padding:18px 24px 17px;grid-template-rows:11px 48px 38px 20px 37px;row-gap:7px}
+      .workInner{padding:16px 24px 15px;grid-template-rows:11px 46px 34px 18px 19px 37px;row-gap:5px}
       .mark{width:88px;height:11px;margin-bottom:0}
-      .work h2{font-size:22px;min-height:0;margin-bottom:0}
-      .work p{font-size:14px;line-height:1.32;margin-bottom:0}
+      .work h2{font-size:21px;min-height:0;margin-bottom:0}
+      .work p{font-size:13.6px;line-height:1.28;margin-bottom:0}
+      .creditLine{font-size:13.7px}
       .open{margin-top:0;padding:10px 24px;font-size:16px}
       .footerPanel{padding:13px 24px;border-radius:26px;gap:14px}
       .footerText{font-size:14.2px;line-height:1.34}
@@ -443,7 +452,7 @@
       .intro{font-size:16px;line-height:1.48;text-align:right}
       .intro p + p{margin-top:7px}
       .work{border-radius:30px}
-      .workInner{padding:23px 20px 20px;grid-template-rows:12px auto auto 22px 40px;row-gap:9px}
+      .workInner{padding:23px 20px 20px;grid-template-rows:12px auto auto auto 22px 40px;row-gap:8px}
       .work h2{min-height:auto;font-size:22px}
       .work p{font-size:15px}
       .footerPanel{grid-template-columns:1fr;padding:18px 18px;border-radius:26px}
@@ -471,6 +480,7 @@
           <div class="mark" aria-hidden="true"></div>
           <h2>איה בעולם - סרטון</h2>
           <p class="descSpacer" aria-hidden="true">&nbsp;</p>
+          <p class="creditSpacer" aria-hidden="true">&nbsp;</p>
           <p class="created">נוצר ב-AI</p>
           <a class="open" href="https://drive.google.com/file/d/1kf21T06Yz5dYB-3MK6YpMLRkTevDwCMR/preview" target="_blank" rel="noopener">פתיחה</a>
         </div>
@@ -481,7 +491,8 @@
           <div class="mark" aria-hidden="true"></div>
           <h2>ממשק תהליכי עבודה - אינטראקטיבי</h2>
           <p>ממשק המציג צ'ק ליסטים לתהליכי עבודה<br>במערכת למידה. כולל תצוגת צ'ק ליסט ותרשים</p>
-          <p class="created">נוצר ב-ChatGPT</p>
+          <p class="creditLine">אפיון וכתיבת תוכן: אמרי שטסל</p>
+          <p class="created">נבנה בסיוע ChatGPT</p>
           <a class="open" href="https://imri98.github.io/lmsProcessInteractiveFinal/" target="_blank" rel="noopener">פתיחה</a>
         </div>
       </article>
@@ -491,6 +502,7 @@
           <div class="mark" aria-hidden="true"></div>
           <h2>לומדת תפעול מערכת סינריון</h2>
           <p>לומדת למטרת הדרכה על התפעול במערכת<br>הנוכחות סינריון</p>
+          <p class="creditSpacer" aria-hidden="true">&nbsp;</p>
           <p class="created">נוצר ב-Storyline</p>
           <a class="open" href="https://360.articulate.com/review/content/790c2341-2304-47f4-a56f-9f4e62432c3f/review" target="_blank" rel="noopener">פתיחה</a>
         </div>
