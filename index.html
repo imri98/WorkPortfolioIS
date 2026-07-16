@@ -111,6 +111,20 @@
       max-width:1120px;
     }
 
+    .heroTitle{
+      display:grid;
+      justify-items:center;
+      gap:8px;
+    }
+
+    .buildNote{
+      margin:0;
+      color:var(--softText);
+      font-size:clamp(12.5px,.92vw,14px);
+      line-height:1.35;
+      font-weight:500;
+    }
+
     h1{
       margin:0;
       font-size:clamp(46px,5.05vw,76px);
@@ -466,7 +480,10 @@
   <main class="page">
     <section class="hero">
       <div class="heroContent">
-        <h1>אמרי שטסל תיק עבודות</h1>
+        <div class="heroTitle">
+          <p class="buildNote">ממשק תיק העבודות נבנה בגישת <bdi dir="ltr">vibe coding</bdi> באמצעות <bdi dir="ltr">ChatGPT</bdi>.</p>
+          <h1>אמרי שטסל תיק עבודות</h1>
+        </div>
         <div class="intro">
           <p class="lead">איש מערכות למידה וטכנולוגיות דיגיטליות עם ניסיון מעשי בניהול ותפעול מערכות LMS.</p>
           <p>מתמקד בהטמעת מערכות, ניהול תכנים, הקצאות משתמשים, הפקת דוחות, בדיקת תקינות, תמיכה במשתמשים ופתרון תקלות בסביבות למידה דיגיטליות.</p>
